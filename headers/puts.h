@@ -8,6 +8,9 @@ Signed: 15 year old David Mella, 1/9/21.
 
 */
 
+#ifndef _PUTS_H_
+#define _PUTS_H_
+
 void puts(const char *string, int colour)
 {
     volatile char *video = (volatile char*)0xB8000;
@@ -17,3 +20,12 @@ void puts(const char *string, int colour)
         *video++ = colour;
     }
 }
+
+
+
+
+
+
+
+
+#endif // not _PUTS_H_
