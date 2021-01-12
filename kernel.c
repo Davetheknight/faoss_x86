@@ -1,7 +1,10 @@
 #include "headers/puts.h"
+#include "headers/stdarg.h"
 int kmain()
 {
-	puts("WELCOME TO FAOSS.\n hallo.", 0x02);
+	puts("welcome.", 0x02);
 
 	return 0;
 }
+
+
