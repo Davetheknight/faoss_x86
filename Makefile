@@ -9,4 +9,5 @@ all:
 	ld -m elf_i386 -T link.ld -o kernel.bin kasm.o kc.o
 	mv kernel.bin faoss/boot
 	./rtrash.sh
+	grub2-mkrescue -o faoss.iso faoss/
 compile:
