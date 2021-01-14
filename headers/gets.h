@@ -8,8 +8,8 @@ Our first user input header file. we need this
 
 
 
-#ifndef _GETS_H_
-#ifndef _GETS_H_
+#ifndef _MGETS_H_
+#define _MGETS_H_
 
 
 //Code goes here :)

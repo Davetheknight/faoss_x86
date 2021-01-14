@@ -5,8 +5,8 @@ contact me (david) if you think otherwise
 
 
 
-#ifndef _PRINTF_H_
-#define _PRINTF_H_
+#ifndef _MPRINTF_H_
+#define _MPRINTF_H_
 
 
 #include "headers/stdarg.h"
@@ -14,14 +14,24 @@ contact me (david) if you think otherwise
 
 
 
-void printf(){
-
-
-va_list 
+int printf(){
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
 
 }
 

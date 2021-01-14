@@ -8,8 +8,8 @@ Signed: 15 year old David Mella, 1/9/21.
 
 */
 
-#ifndef _PUTS_H_
-#define _PUTS_H_
+#ifndef _MPUTS_H_
+#define _MPUTS_H_
 
 void puts(const char *string, int colour)
 {
