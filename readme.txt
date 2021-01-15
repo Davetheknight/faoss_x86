@@ -1,5 +1,10 @@
 this will be an awesome OS. 
 
+Only runs on x86 and x86_64 by the way.
+
+
+
+
 When creating header files replacing standard libraries, please use "M" inside of the header's #ifndef and #define declaration. Example: we have a stdio.h file so we include in the file #ifndef _MSTDIO_H_ #define _MSTDIO_H_ #endif.
 
 
