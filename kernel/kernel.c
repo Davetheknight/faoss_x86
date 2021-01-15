@@ -1,5 +1,6 @@
-#include "../headers/puts.h"
-#include "../headers/stdarg.h"
+#include "puts.h"
+#include "stdarg.h"
+#include "types.h"
 int kmain()
 {
 	puts("welcome.", 0x02);
