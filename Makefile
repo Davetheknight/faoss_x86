@@ -7,12 +7,13 @@ all:
 
 
 
-	nasm -f elf32 kernel.asm
-	mv kernel.o kasm.o
-	gcc -m32 -c -fno-builtin kernel.c -o kc.o
-	ld -m elf_i386 -T link.ld -o kernel.bin kasm.o kc.o
+	nasm -f elf32 kernel/kernel.asm
+	mv kernel/kernel.o intermediates/kasm.o
+	gcc -m32 -c -fno-builtin kernel/kernel.c -o intermediates/kc.o
+	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 	./scripts/rtrash.sh
+
 	grub2-mkrescue -o faoss.iso faoss/
 
 
@@ -22,10 +23,10 @@ runqemu:
 	./scripts/check.sh
 
 
-	nasm -f elf32 kernel.asm
-	mv kernel.o kasm.o
-	gcc -m32 -c -fno-builtin kernel.c -o kc.o
-	ld -m elf_i386 -T link.ld -o kernel.bin kasm.o kc.o
+	nasm -f elf32 kernel/kernel.asm
+	mv kernel/kernel.o intermediates/kasm.o
+	gcc -m32 -c -fno-builtin kernel/kernel.c -o intermediates/kc.o
+	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 	./scripts/rtrash.sh
 

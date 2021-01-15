@@ -1,4 +1,4 @@
-rm kasm.o
-rm kc.o
+rm intermediates/kasm.o
+rm intermediates/kc.o
 
 
