@@ -8,8 +8,8 @@ int kmain()
 {
 	clearScreen();
 
-	puts("welcome. ", 0x02);
-
+	puts("welcome.", 0x02);
+	puts("bruh", 0x02);
 	return 0;
 }
 
