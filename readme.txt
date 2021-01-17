@@ -1,5 +1,23 @@
 this will be an awesome OS. 
 
+Since this project is difficult to compile outside of Linux, I've included the latest .iso file within the source code. If you want to code to contribute, maybe you should install a virtual machine, or dual boot linux on your computer.
+
+
+Compilation prerequisites: 
+
+Some UNIX or UNIX-like machine is needed to run this.
+Make, nasm, gcc, qemu, and grub2 are needed. 
+
+
+
+
+
+
+
+
+
+
+
 Only runs on x86 and x86_64 by the way.
 
 

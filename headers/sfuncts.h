@@ -2,6 +2,13 @@
 essential
 */
 
+#include "types.h"
+#include "init.h"
+
+#ifndef _MSFUNCTS_H_
+#define _MSFUNCTS_H_
+
+
 
 
 void clearLine(uint8 from,uint8 to)
@@ -13,5 +20,24 @@ void clearLine(uint8 from,uint8 to)
                 vidmem[i] = 0x0;
         }
 }
+void updateCursor();
+void clearScreen(){
+
+	clearLine(0,sh-1);
+	cursorX = 0;
+	cursorY = 0;
+	updateCursor();
+}
+
+void updateCursor(){
+
+unsigned temp;
+temp = cursorY * sw + cursorX;
 
 
+
+
+}
+
+
+#endif //not msfuncts_h
