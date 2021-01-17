@@ -24,10 +24,13 @@ uint8 inportb (uint16 _port){
 void outportb (uint16 _port, uint8 _data){
 
 	__asm__ __volatile__ ("outb %1, %0" : : "dN" (_port), "a" (_data));
+}
 
-
-
-
+uint16 strlength(string ch)
+{
+        uint16 i = 1;
+        while(ch[i++]);
+        return --i;
 }
 
 #endif // not minit_h

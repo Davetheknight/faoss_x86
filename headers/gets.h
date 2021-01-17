@@ -2,6 +2,11 @@
 Our first user input header file. we need this
 -david
 
+
+I wish i knew people who could make a simple OS like me...
+congrats on finding that easter egg ^
+
+
 */
 
 
