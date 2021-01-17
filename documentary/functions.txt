@@ -1,0 +1,29 @@
+Functions are found in (your project's root directory)/headers. There you will find files like puts.h.
+
+Note that I am using quotation marks to reference to the header file locations. This is how you are 
+meant to reference these files from any c program, since I set the project's root to the makefile's
+pwd output.
+
+Always check this file before making functions to make sure that your function's name hasn't been
+taken!!!
+
+By the way, all header functions are being described by the header files' alphabetical order. 
+Simply doing "ls" in your terminal will show all the header files from a to b. This is the order 
+that I've chosen to make it.
+
+All type declarations are in types.h.
+
+Here are all of the functions, locations, and usage:
+
+#	In "gets.h": No functions.
+
+	In "init.h": uint8<equivalent to 'unsigned char'> inportb(uint16<equivalent to 'unsigned short'> _port), and void outportb(uint16<equivalent to 'unsigned short'> _port, uint8<equivalent to 'unsigned char'> _data) 
+
+#	In "printf.h": No functions.
+
+	In "puts.h": void puts(const char *string, int colour)
+
+	In "sfuncts.h": void clearLine(uint8<equivalent to 'unsigned char'> from,uint8<equivalent to 'unsigned char'> to), void clearScreen(), and void updateCursor(). 
+
+#	In "stdarg.h": No functions useful to project (its a "hello world").
+	

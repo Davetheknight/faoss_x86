@@ -1,7 +1,7 @@
 this will be an awesome OS. 
 
 Since this project is difficult to compile outside of Linux, I've included the latest .iso file within the source code. If you want to code to contribute, maybe you should install a virtual machine, or dual boot linux on your computer.
-
+ATTENTION CONTRIBUTORS. YOU WILL NEED TO PROVIDE INFORMATION ON FUNCTIONS IN THE CASE THAT YOU CREATE NEW ONES IN THE DOCUMENTARY DIRECTORY. IF  YOU DON'T ADD DOCUMENTARY, YOUR PULL REQUESTS WILL NOT BE APPROVED. 
 
 Compilation prerequisites: 
 
