@@ -15,15 +15,15 @@ All type declarations are in types.h.
 
 Here are all of the functions, locations, and usage:
 
-#	In "gets.h": No functions.
+	In "gets.h": string readStr(), uint8 strEql(string ch1, string ch2) 
 
-	In "init.h": uint8<equivalent to 'unsigned char'> inportb(uint16<equivalent to 'unsigned short'> _port), and void outportb(uint16<equivalent to 'unsigned short'> _port, uint8<equivalent to 'unsigned char'> _data) 
+	In "init.h": uint8 inportb(uint16 _port), void outportb(uint16 _port, uint8 _data), uint16 strlength(string ch) 
 
 #	In "printf.h": No functions.
 
-	In "puts.h": void puts(const char *string, int colour)
+	In "puts.h": void puts(string ch, int colour), void printch(char c)
 
-	In "sfuncts.h": void clearLine(uint8<equivalent to 'unsigned char'> from,uint8<equivalent to 'unsigned char'> to), void clearScreen(), and void updateCursor(). 
+	In "sfuncts.h": void clearLine(uint8 from,uint8 to), void clearScreen(), void updateCursor(). 
 
 #	In "stdarg.h": No functions useful to project (its a "hello world").
 	
