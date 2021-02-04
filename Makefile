@@ -16,6 +16,7 @@ fedoraiso:
 	nasm -f elf32 kernel/kernel.asm
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
+	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 	./scripts/rtrash.sh
@@ -37,6 +38,7 @@ ubuntuiso:
 	nasm -f elf32 kernel/kernel.asm
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
+	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 	./scripts/rtrash.sh
@@ -57,6 +59,7 @@ runqemu:
 	nasm -f elf32 kernel/kernel.asm
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
+	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 	./scripts/rtrash.sh

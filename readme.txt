@@ -16,8 +16,6 @@ Make, dash (the shell), nasm, gcc, qemu, and grub2 are needed.
 
 
 
-
-
 Only runs on x86 and x86_64 by the way.
 
 
