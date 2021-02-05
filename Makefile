@@ -19,7 +19,7 @@ fedoraiso:
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
-	./scripts/rtrash.sh
+
 
 
 #section unique to "fedoraiso"
@@ -41,7 +41,6 @@ ubuntuiso:
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
-	./scripts/rtrash.sh
 
 
 #section unique to "ubuntuiso"
@@ -62,7 +61,7 @@ runqemu:
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
-	./scripts/rtrash.sh
+
 
 #section unique to runqemu
 	qemu-system-x86_64 -kernel faoss/boot/kernel.bin
