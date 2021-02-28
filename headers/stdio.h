@@ -13,7 +13,7 @@
 #define sizeof(object) (char *)(&object+1) - (char *)(&object)
 
 
-/*
+/* There is a terrible error here and it is  unfortunate. Just uncomment this and compile and you'll find it.
 int reverse(char s[1000], int i){
 
 	char r[1000];
