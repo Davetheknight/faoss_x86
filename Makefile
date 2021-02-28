@@ -17,7 +17,7 @@ fedoraiso:
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
-	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
+	#gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 
@@ -40,7 +40,7 @@ ubuntuiso:
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
-	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
+	#gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 
@@ -61,7 +61,7 @@ runqemu:
 	mv kernel/kernel.o intermediates/kasm.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers kernel/kernel.c -o intermediates/kc.o
 	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/headers -E kernel/kernel.c > intermediates/long.c
-	gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
+	#gcc -m32 -c -fno-builtin -I$(PROJECT_ROOT)/kernel/shell kernel/shell -o intermediates/shell.o
 	ld -m elf_i386 -T kernel/link.ld -o kernel.bin intermediates/kasm.o intermediates/kc.o
 	mv kernel.bin faoss/boot
 
