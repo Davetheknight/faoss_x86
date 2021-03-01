@@ -1,11 +1,5 @@
-#include "puts.h"
-#include "stdarg.h"
-#include "types.h"
-#include "sfuncts.h"
-#include "printf.h"
-#include "gets.h"
 
-
+#include "stdio.h"
 
 int kmain()
 {
