@@ -1,5 +1,7 @@
 
 #include "stdio.h"
+#include "shell.h"
+
 
 int kmain()
 {
@@ -11,6 +13,10 @@ int kmain()
 		string ch = readStr();
 		if (strEql(ch, "help")){
 			puts("\nThis is the very first version with a shell that can recieve user input. \"help\" is actually the only command that exists right now.", 0x02);
+		}
+		else if(strEql(ch, "clear"))
+		{
+			clearScreen();
 
 		}
 
