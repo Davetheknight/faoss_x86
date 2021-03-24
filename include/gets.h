@@ -101,11 +101,11 @@ string readStr()
                 i--;
                 buffstr[i] = 0;
                 break;
-       /* case 15:
-                printch('\t');          Tab button
+        case 15:
+                printch('\t');
                 buffstr[i] = '\t';
                 i++;
-                break;*/
+                break;
         case 16:
                 printch('q');
                 buffstr[i] = 'q';
