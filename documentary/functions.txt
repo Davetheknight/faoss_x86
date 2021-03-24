@@ -8,7 +8,7 @@ Always check this file before making functions to make sure that your function's
 taken!!!
 
 By the way, all header functions are being described by the header files' alphabetical order. 
-Simply doing "ls" in your terminal will show all the header files from a to b. This is the order 
+Simply doing "ls" in your terminal will show all the header files from a to z. This is the order 
 that I've chosen to make it.
 
 All type declarations are in types.h.
