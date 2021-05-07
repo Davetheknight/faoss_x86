@@ -10,6 +10,7 @@
 #include "gets.h"
 #include "string.h"
 #include "stdbool.h"
+#include "printk.h"
 #define sizeof(object) (char *)(&object+1) - (char *)(&object)
 
 
