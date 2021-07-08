@@ -19,7 +19,7 @@ void printch(char c);
 void newLineCheck();
 void scrollUp(uint8 lineNumber);
 
-void puts(string ch, int colour)
+void kputs(string ch, int colour)
 {
 	uint16 i =0;
 	for (i; i<strlength(ch);i++)

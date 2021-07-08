@@ -17,7 +17,7 @@ typedef struct {
 } va_list[1];
 
 void test(void){
-	puts("hello", 0x02);
+	kputs("hello", 0x02);
 
 
 
