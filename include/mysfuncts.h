@@ -2,8 +2,8 @@
 essential
 */
 
-#include "types.h"
-#include "init.h"
+#include "mytypes.h"
+#include "myinit.h"
 
 #ifndef _MSFUNCTS_H_
 #define _MSFUNCTS_H_

@@ -2,15 +2,15 @@
 #define _STDIO_H_
 
 
-#include "puts.h"
-#include "stdarg.h"
-#include "types.h"
-#include "sfuncts.h"
-#include "printf.h"
-#include "gets.h"
-#include "string.h"
-#include "stdbool.h"
-#include "printk.h"
+#include "myputs.h"
+#include "mystdarg.h"
+#include "mytypes.h"
+#include "mysfuncts.h"
+#include "myprintk.h"
+#include "mygets.h"
+#include "mystring.h"
+#include "mystdbool.h"
+#include "myprintk.h"
 #define sizeof(object) (char *)(&object+1) - (char *)(&object)
 
 

@@ -11,8 +11,8 @@ congrats on finding that easter egg ^
 
 
 
-#include "init.h"
-#include "types.h"
+#include "myinit.h"
+#include "mytypes.h"
 
 #ifndef _MGETS_H_
 #define _MGETS_H_

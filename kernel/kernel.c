@@ -1,6 +1,6 @@
 
-#include "stdio.h"
-#include "shell.h"
+#include "mystdio.h"
+#include "myshell.h"
 
 
 int kmain()

@@ -8,9 +8,9 @@ Signed: 15 year old David Mella, 1/9/21.
 
 */
 
-#include "types.h"
-#include "init.h"
-#include "sfuncts.h"
+#include "mytypes.h"
+#include "myinit.h"
+#include "mysfuncts.h"
 
 #ifndef _MPUTS_H_
 #define _MPUTS_H_

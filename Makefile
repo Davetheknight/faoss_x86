@@ -67,7 +67,7 @@ runqemu:
 
 
 #section unique to runqemu
-	qemu-system-x86_64 -kernel faoss/boot/kernel.bin
+	qemu-system-x86_64 -kernel $(PROJECT_ROOT)/faoss/boot/kernel.bin
 	@echo HEADER ROOT IS $(PROJECT_ROOT)/include
 
 

@@ -6,7 +6,7 @@ ATTENTION CONTRIBUTORS. YOU WILL NEED TO PROVIDE INFORMATION ON FUNCTIONS IN THE
 Compilation prerequisites: 
 
 Some UNIX or UNIX-like machine is needed to run this.
-Make, dash (the shell), nasm, gcc, qemu, and grub2 are needed. 
+Make, dash (the shell), nasm, gcc, qemu, qemu-system-x86, and grub2 are needed. 
 
 
 

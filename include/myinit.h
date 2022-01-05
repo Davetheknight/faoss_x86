@@ -2,7 +2,7 @@
 /* file used to set up variables */
 
 
-#include "types.h"
+#include "mytypes.h"
 
 
 #ifndef _MINIT_H_

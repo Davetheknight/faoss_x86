@@ -2,9 +2,9 @@
 probably a better alternative to puts... most of you would prefer this over puts, i think...
 contact me (david) if you think otherwise
 */
-#include "puts.h"
-#include "types.h"
-#include "init.h"
+#include "myputs.h"
+#include "mytypes.h"
+#include "myinit.h"
 
 
 #ifndef _MPRINTF_H_

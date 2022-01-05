@@ -4,7 +4,7 @@ The first step in creating printf and gets, etc. Good job, team.
 
 
 */
-#include "puts.h"
+#include "myputs.h"
 
 #ifndef _MSTDARG_H_
 #define _MSTDARG_H_
